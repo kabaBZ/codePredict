@@ -3,10 +3,11 @@
 import os
 import tensorflow as tf
 import numpy as np
-# import tf_slim as slim
-import tensorflow.contrib.slim as slim
+import tf_slim as slim
+import tensorflow.compat.v1 as tf
+# import tensorflow.contrib.slim as slim
 # %%
-
+tf.compat.v1.disable_eager_execution()
 # 数据集路径
 dataset_dir = "./captcha/images/"
 # 测试集占比

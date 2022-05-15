@@ -40,6 +40,7 @@ if __name__ == '__main__':
     for i in range(num):
         gen_captcha_text_and_image()
         sys.stdout.write('\r>> Creating image %d/%d' % (i + 1, num))
+        # print('\r>> Creating image %d/%d' % (i + 1, num))
         sys.stdout.flush()
     sys.stdout.write('\n')
     sys.stdout.flush()

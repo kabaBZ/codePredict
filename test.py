@@ -1,15 +1,18 @@
 # %%
 
 import os
-import tensorflow as tf
+# import tensorflow as tf
+import tensorflow.compat.v1 as tf
+
 import numpy as np
-# import tf_slim as slim
-import tensorflow.contrib.slim as slim
+import tf_slim as slim
+# import tensorflow.contrib.slim as slim
 import matplotlib.pyplot as plt
 from random import choice
 from PIL import Image
 # tf.disable_eager_execution()
 # %%
+tf.compat.v1.disable_eager_execution()
 
 # 数据集路径
 dataset_dir = "./captcha/images/"
